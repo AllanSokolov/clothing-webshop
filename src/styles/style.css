@@ -286,6 +286,47 @@ h2 {
   margin: 25px auto;
 }
 
+/* Social media section*/
+.social-buttons {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.social-buttons li a {
+  display: block;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 30px;
+  border-radius: 50%;
+  margin: 10px auto;
+  transition: all .30s ease-in-out; 
+}
+
+.social-buttons a:hover {
+  opacity: 0.9;
+  box-shadow: 0 2px 6px 2px rgba(83, 78, 78, 0.9);
+  background-color: #EFC050;
+  color: #333;
+}
+
+.social-buttons .fa-facebook {
+  background: #3B5998;
+  color: #fff;
+}
+
+.social-buttons .fa-instagram {
+  background: #125688;
+  color: #fff;
+}
+
+.social-buttons .fa-tiktok {
+  background: #000;
+  color: #fff;
+}
+
 /* Sales section */
 .sale-links a {
   border-color: #282D3C;
@@ -611,3 +652,38 @@ footer a:hover {
   color: #EDF1FF;
 }
 
+/* Scroll to top button */
+.toTopBtn {
+  background-color: #444;
+  border: none;
+  border-radius: 50%;
+  color: #f8f8ff;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 48px;
+  width: 48px;
+  
+  /* place it at the bottom right corner */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  /* keep it at the top of everything else */
+  z-index: 100;
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  transform: translateY(100px);
+  /* and a transition */
+  transition: all 1.0s ease;
+}
+
+.toTopBtn:hover {
+  background-color: #222;
+  color: #ffc85c;
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+  border: none;
+}
