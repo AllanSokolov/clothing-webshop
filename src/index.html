@@ -35,22 +35,22 @@
       </div> 
     </div>-->
 
-   <!--Navigation bar -->
-     <div class="topnav" id="topNavbar">
-      <a class="navbar-brand" href="index.html">
-          Cool Wear  
-      </a>
-      <a href="index.html" class="active">Főoldal</a>
-      <a href="#">Bolt</a>
-      <a href="#">Egyedi minták</a>
-      <a href="#">Outlet</a>
-      <a href="#">Újdonságok</a>
-      <a href="#">Infók</a>
-      <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-        <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
-      </a>
-    </div>
-    <!--  Navigation bar end-->
+  <!--Navigation bar -->
+  <div class="topnav" id="topNavbar">
+    <a class="navbar-brand" href="index.html">
+        Cool Wear  
+    </a>
+    <a href="index.html" class="active">Főoldal</a>
+    <a href="bolt.html">Bolt</a>
+    <a href="mintak.html">Egyedi minták</a>
+    <a href="outlet.html">Outlet</a>
+    <a href="ujdonsagok.html">Újdonságok</a>
+    <a href="rolunk.html">Infók</a>
+    <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+      <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
+    </a>
+  </div>
+  <!--  Navigation bar end-->
 
     <!-- Header section -->
     <header>
@@ -94,18 +94,23 @@
 
   </header>
 
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <h1>TERVEZZ EGYEDI PÓLÓT AJÁNDÉKBA!</h1>
+    </div>
+  </div>
+
   <main>
     <!-- Sales section -->
-    <div id="sales" class="page-section">
+    <div id="sales" class="page-section img-fluid">
       <div class="card text-center">
-        <img class="card-img" src="img/sale_banner.png" alt="Sale banner">
+        <img class="card-img" id="sale-banner" src="img/sale_banner.png" alt="Sale banner">
         <div class="card-img-overlay">
           <div class="container">
             <div class="row d-flex justify-content-center ">
               <div class="col-md-10">
-                <div class="sale-links">
-                  <a class="btn btn-xl text-uppercase js-scroll-trigger mr-2" href="#ferfi">Férfi</a>
-                  <a class="btn btn-xl text-uppercase js-scroll-trigger mr-2" href="#noi" target="_blank">Női</a>
+                <div class="sale-links" id="kedvezmeny">
+                    <a class="btn btn-xl text-uppercase js-scroll-trigger mr-2" href="#ferfi">Kedvezmény</a>
                 </div>
               </div>
             </div>
@@ -117,7 +122,9 @@
 
     <!-- Collections section -->
     <div id="collections" class="container-fluid">
+      <div class="row justify-content-md-center">
       <h2>Szezonális kollekció</h2>
+    </div>
       <div class="row">
         <div class="col-md-6">
           <a href="#ferfi"><div class="card text-center">
@@ -138,6 +145,68 @@
     <!-- Collections section end-->
 
   </main>
+
+  <!-- Wholesale section -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <div class="container bg-image">
+
+          </div>
+        </div>
+        <div class="col-md">
+          <h3>Egyedi pólók, Céges pólók, Saját merchandise influencereknek...</h3>
+          <div class="container">
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <i class="fa fa-envelope mr-3 fa-lg"></i> info@coolwear.hu</p>
+            </li>
+            <li>
+              <p>
+                <i class="fa fa-phone mr-3 fa-lg"></i> + 01 234 567 88</p>
+            </li>
+          </ul>
+        </div>
+          <div class="container">
+          <button type="button" class="btn btn-outline-warning">Részletek</button>
+          <button type="button" class="btn btn-warning">Árajánlat kérés</button>
+        </div>
+      </div>
+    </div>
+  </section><br><br>
+  <!-- Wholesale section end -->
+
+  <div class="container">
+    <div class="row justify-content-md-center">
+    <h2>Minták</h2>
+  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col"><button type="button" class="btn btn-outline-warning btn-lg btn-w">Új minták</button></div>
+        <div class="col"><button type="button" class="btn btn-outline-warning btn-lg btn-w">Népszerű</button></div>
+        <div class="col"><button type="button" class="btn btn-outline-warning btn-lg btn-w">Születésnap</button></div>
+        <div class="col"><button type="button" class="btn btn-outline-warning btn-lg btn-w">Lány és Legénybúcs</button></div>
+      </div><br>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col"><button type="button" class="btn btn-outline-warning btn-lg btn-w">Foglalkozások</button></div>
+        <div class="col"><button type="button" class="btn btn-outline-warning btn-lg btn-w">HOBBIK</button></div>
+        <div class="col"><button type="button" class="btn btn-outline-warning btn-lg btn-w">Sport</button></div>
+        <div class="col"><button type="button" class="btn btn-outline-warning btn-lg btn-w">Család</button></div>
+      </div><br>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col"><button type="button" class="btn btn-outline-warning btn-lg btn-w">Állatok és Természet</button></div>
+        <div class="col"><button type="button" class="btn btn-outline-warning btn-lg btn-w">Vicces Pólók</button></div>
+        <div class="col"><button type="button" class="btn btn-outline-warning btn-lg btn-w">Zene</button></div>
+        <div class="col"><button type="button" class="btn btn-outline-warning btn-lg btn-w">Ünnepek</button></div>
+      </div><br>
+    </div>
+</div><br><br>
 
   <!-- Footer -->
   <footer class="page-footer font-small mdb-color lighten-3">
@@ -274,7 +343,7 @@
             </li>
             <li>
               <p>
-                <i class="fa fa-home mr-3"></i>Cool Wear Kft.</p>
+                <i class="fas fa-briefcase mr-3"></i>Cool Wear Kft.</p>
             </li>
           </ul>
 
@@ -296,10 +365,7 @@
               <a href="https://instagram.com/" class="fa fa-instagram"></a>
             </li>
             <li class="social_buttons_item">
-              <a href="https://twitter.com/" class="fa fa-twitter"></a>
-            </li>
-            <li class="social_buttons_item">
-              <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+              <a href="https://twitter.com/" class="fab fa-tiktok"></a>
             </li>
           </ul>
           
