@@ -19,33 +19,39 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-
-    <!--<div class="navbar">
-      <a href="#home">Home</a>
-      <a href="#news">News</a>
-      <div class="dropdown">
-      <button class="dropbtn" onclick="myFunction()">Dropdown
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content" id="myDropdown">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div>
-      </div> 
-    </div>-->
-
+  
   <!--Navigation bar -->
   <div class="topnav" id="topNavbar">
     <a class="navbar-brand" href="index.html">
         Cool Wear  
     </a>
-    <a href="index.html" class="active">Főoldal</a>
-    <a href="bolt.html">Bolt</a>
-    <a href="mintak.html">Egyedi minták</a>
+    <a href="index.html" class="active">Főoldal</a>    
+    <div class="dropdown">
+      <button class="dropbtn">Bolt
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Férfi</a>
+        <a href="#">Női</a>
+        <a href="#">Gyerek</a>
+        <a href="#">Kiegészítők</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Egyedi minták
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Egyéni</a>
+        <a href="#">Nagyker</a>
+        <a href="#">Partnerprogram</a>
+      </div>
+    </div>
     <a href="outlet.html">Outlet</a>
     <a href="ujdonsagok.html">Újdonságok</a>
     <a href="rolunk.html">Infók</a>
+    <a href="#fiok" title="Fiók"><i class="fas fa-user"></i></a>
+    <a href="#kosar" title="Kosár"><i class="fas fa-shopping-bag"></i></a>
     <a href="javascript:void(0);" class="icon" onclick="hamburger()">
       <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
     </a>
@@ -95,7 +101,7 @@
   </header>
 
   <div class="container">
-    <div class="row justify-content-md-center">
+    <div class="row justify-content-center">
       <h1>TERVEZZ EGYEDI PÓLÓT AJÁNDÉKBA!</h1>
     </div>
   </div>
@@ -104,11 +110,11 @@
 
     <!-- Social media -->
     <section class="social-section">
-      <div class="container-fluid text-center">
-        <div class="row">
+      <div class="container-fluid">
+        <div class="row text-center">
           <div class="col-12">
             <h2>Kövess minket a közösségi felületeken!</h2>
-            <ul class="social-buttons">
+            <ul class="social-buttons justify-content-center">
               <li class="social_buttons_item">
                 <a href="https://www.facebook.com/" class="fa fa-facebook fa-social" target="_blank"></a>
               </li>
@@ -119,7 +125,6 @@
                 <a href="https://www.tiktok.com/" class="fab fa-tiktok fa-social" target="_blank"></a>
               </li>
             </ul>
-          </div>
         </div>
       </div>
     </section>
@@ -130,10 +135,10 @@
         <img class="card-img" id="sale-banner" src="img/sale_banner.png" alt="Sale banner">
         <div class="card-img-overlay">
           <div class="container">
-            <div class="row d-flex justify-content-center ">
-              <div class="col-md-10">
+            <div class="row d-flex justify-content-center">
+              <div class="col-12">
                 <div class="sale-links" id="kedvezmeny">
-                    <a class="btn btn-xl text-uppercase js-scroll-trigger mr-2" href="#ferfi">Kedvezmény</a>
+                    <a class="btn btn-xl text-uppercase js-scroll-trigger" href="#ferfi">Kedvezmény</a>
                 </div>
               </div>
             </div>
@@ -146,8 +151,8 @@
     <!-- Collections section -->
     <div id="collections" class="container-fluid">
       <div class="row justify-content-md-center">
-      <h2>Szezonális kollekció</h2>
-    </div>
+        <h2>Szezonális kollekció</h2>
+      </div>
       <div class="row">
         <div class="col-md-6">
           <a href="#ferfi"><div class="card text-center">
@@ -157,11 +162,13 @@
           </div></a>
         </div>
         <div class="col-md-6">
-          <a href="#noi"><div class="card text-center">
-            <img class="card-img" src="img/women_summer.png" alt="Women summer collection">
-            <div class="card-img-overlay">
+          <a href="#noi">
+            <div class="card text-center">
+              <img class="card-img" src="img/women_summer.png" alt="Women summer collection">
+              <div class="card-img-overlay">
+              </div>
             </div>
-          </div></a>
+          </a>
         </div>
       </div>
     </div>
