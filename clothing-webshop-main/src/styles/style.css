@@ -109,7 +109,7 @@ list-style-image: none;
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: relative;
   background-color: #333;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -136,7 +136,7 @@ list-style-image: none;
 }
 
 /* When the screen is less than 830 pixels wide, hide all links, except for the logo. Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 830px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
