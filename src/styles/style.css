@@ -109,7 +109,7 @@ list-style-image: none;
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: #333;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -435,6 +435,9 @@ h1, h2 {
   text-decoration: none;
 }
 
+.form-check-label {
+  margin-left: 15px;
+}
 /* Footer */
 .page-footer{
   background-color: #282D3C;
@@ -762,7 +765,7 @@ footer a:hover {
 .trusted-section{
   background: #cfcfcf none repeat scroll 0 0;
   border-radius: 2px;
-  margin: 80px auto 80px;
+  margin: 80px auto;  
   max-width: 100%;
   padding: 50px 70px 70px 71px;
   color: grey;
@@ -785,18 +788,27 @@ padding: 15px;
 
 
 /* Wholesale section */
+.wholesale-section {
+  background-color: #333;
+  color: #EDF1FF;
+  padding: 10px;
+}
+
 .bg-image{
   background-image: url("../img/clothes-store.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: contain, cover;
+  background-size: cover;
   left: 0px;
   height: 100%;
-  
 }
 
 /* Wholesale section end */
 
+.collections-btn {
+  width: 250px;
+  padding: 10px;
+}
 
 /* News */
 /* Header/Blog Title */
@@ -841,7 +853,7 @@ padding: 15px;
 .p-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
-  margin: auto;
+  margin: 10px;
   text-align: center;
   font-family: arial;
 }
