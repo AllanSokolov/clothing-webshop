@@ -797,10 +797,22 @@ padding: 15px;
 .bg-image{
   background-image: url("../img/clothes-store.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-size: cover!important;
+  border-style: none;
+  vertical-align: middle;
   left: 0px;
+  padding: 0px;
   height: 100%;
+}
+
+/* If the screen size is 600px wide or less, hide the element */
+@media screen and (max-width: 750px) {
+  div.bg-image {
+    display: none;
+    position: center;
+  }
 }
 
 /* Wholesale section end */
@@ -828,16 +840,22 @@ padding: 15px;
 
 /* Fake image */
 .fakeimg {
-  background-color: #D3D3D3;
-  width: 100%;
+  /*background-color: #D3D3D3;*/
+  background-image: url("../img/softshell-jacken-no-respect.jpg");
+  width: auto;
   padding: 20px;
 }
 
 /* Add a card effect for articles */
 .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
   padding: 20px;
   margin-top: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.4)
 }
 
 /* Clear floats after the columns */
@@ -858,8 +876,19 @@ padding: 15px;
   font-family: arial;
 }
 
+.p-card:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.4)
+}
+
 .price {
   color: grey;
+  font-size: 15px;
+  text-decoration-line: line-through; 
+}
+
+.price1 {
+  color: black;
+  font-weight: bold;
   font-size: 22px;
 }
 
@@ -868,7 +897,7 @@ padding: 15px;
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #000;
+  background-color: #282D3C;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -877,6 +906,7 @@ padding: 15px;
 
 .p-card button:hover {
   opacity: 0.7;
+  color: #ffc85c;
 }
 
 /* Product Card end */
